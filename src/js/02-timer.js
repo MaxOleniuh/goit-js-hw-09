@@ -1,6 +1,7 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import Notiflix from 'notiflix';
+
 const btn = document.querySelector('button');
 const input = document.querySelector('input');
 btn.disabled = true;
@@ -21,7 +22,6 @@ const options = {
   },
 };
 flatpickr('#datetime-picker', options);
-
 const timer = {
   deadline: new Date(),
   intervalId: null,

@@ -3,7 +3,6 @@ import 'flatpickr/dist/flatpickr.min.css';
 import Notiflix from 'notiflix';
 
 const btn = document.querySelector('button');
-const input = document.querySelector('input');
 
 btn.disabled = true;
 

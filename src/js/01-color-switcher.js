@@ -14,9 +14,9 @@ const btnGenerateColorClickHandler = () => {
     startBtn.disabled = true;
   }, 1000);
 };
-
-startBtn.addEventListener('click', btnGenerateColorClickHandler);
-stopBtn.addEventListener('click', () => {
+const stopColorGeneratorHandler = () => {
   clearInterval(colorGereratorId);
   startBtn.disabled = false;
-});
+};
+startBtn.addEventListener('click', btnGenerateColorClickHandler);
+stopBtn.addEventListener('click', stopColorGeneratorHandler);

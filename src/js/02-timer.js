@@ -41,13 +41,13 @@ const timer = {
 
       let { days, hours, minutes, seconds } = this.convertMs(diff);
 
-      this.rootSelector.querySelector('.value[data-days]').innerHTML =
+      this.rootSelector.querySelector('.value[data-days]').textContent =
         this.addLeadingZero(days);
-      this.rootSelector.querySelector('.value[data-hours]').innerHTML =
+      this.rootSelector.querySelector('.value[data-hours]').textContent =
         this.addLeadingZero(hours);
-      this.rootSelector.querySelector('.value[data-minutes]').innerHTML =
+      this.rootSelector.querySelector('.value[data-minutes]').textContent =
         this.addLeadingZero(minutes);
-      this.rootSelector.querySelector('.value[data-seconds]').innerHTML =
+      this.rootSelector.querySelector('.value[data-seconds]').textContent =
         this.addLeadingZero(seconds);
     }, 1000);
   },

@@ -4,7 +4,9 @@ import Notiflix from 'notiflix';
 
 const btn = document.querySelector('button');
 const input = document.querySelector('input');
+
 btn.disabled = true;
+
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -21,7 +23,9 @@ const options = {
     }
   },
 };
+
 flatpickr('#datetime-picker', options);
+
 const timer = {
   deadline: new Date(),
   intervalId: null,
@@ -77,6 +81,7 @@ const timer = {
 
 const startClickHandler = () => {
   timer.start();
+  btn.disabled = true;
 };
 
 btn.addEventListener('click', startClickHandler);
